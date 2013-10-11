@@ -1,0 +1,147 @@
+\documentclass[11pt,a4paper]{report}
+
+\usepackage{verbatim}
+\usepackage{epsfig}
+\usepackage{theorem}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[dvips]{color}
+\usepackage[dvipdfm,pdftitle={Cryptography and Security - Survey 1},pdfpagemode=None,colorlinks=true,linkcolor=black,urlcolor=blue]{hyperref}
+\usepackage{fullpage}
+\usepackage{subfigure}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{lib/verbtext}
+\usepackage{lib/security}
+
+
+\input{lib/macros.tex}
+
+
+
+% +-[A décommenter pour avoir la solution]--------------+
+
+
+\solutiontrue
+
+
+
+% +-[document]------------------------------------------+
+\begin{document}
+
+
+% +-[header survey]-------------------------------------+
+\input{lib/header_fullpage.tex}
+\begin{center}
+\sf
+  \Large{Cryptography and Security}
+
+  \vspace{0.3cm}
+  \Large{2012 -- 2013}
+
+  \vspace{0.3cm}
+  \Large{Survey n$^{\text{o}}$ 3}
+
+  \vspace{0.5cm}
+\end{center}
+
+\hfill{Name:~}{\vrule width 7cm height 0.4pt}
+
+\bigskip
+
+\hfill{SCIPER n$^{\text{o}}$:~}{\vrule width 7cm height 0.4pt}
+
+\begin{comment}
+ \question[]{}
+ {}
+ {}
+ {}
+ {}
+\end{comment}
+
+\question[1]{Tick the \textbf{asymmetric} primitives.}
+ {Digital Signatures}
+ {MACs}
+ {Stream Ciphers}
+ {Block Ciphers}
+
+%\question[1]{In AES, changing the order of which of the following two operations do not change the result?}
+\question[1]{Consider the following pairs of AES operations. In which, the order
+	of the two operations does \emph{not} matter?}
+ {SubBytes-ShiftRows}
+ {AddRoundKey-MixColumn}
+ {SubBytes-MixColumn}
+ {SubBytes-AddRoundKey}
+
+ 
+ 
+ \question[3]{Tick the \textbf{false} statement regarding the DES round function.}
+ {There is an expansion operation $E$ from 32 to 48 bits.}
+{A round key is XORed to an internal register.}
+{There are $8$ identical S-boxes (substitution boxes) of size $6 \times 4$.}
+ {There is a permutation $P$ on 32-bits.}
+ 
+\question[2]{Which mode of operation is similar to a stream cipher?}
+ {ECB}
+ {OFB}
+ {CFB}
+ {CBC}
+
+  \question[2]{Ciphertext stealing ... }
+ {results in the expansion  of the plaintext.}
+ {prevents the expansion of the ciphertext.}
+ {requires an additional secret key.}
+ {steals ciphertext which results in lack of encrypted data.}
+
+
+ %	\question[4]{CBC-MAC}
+%	{is a block cipher.}
+%	{is a good way of designing a MAC from an encryption scheme.}
+%	{should never be used as an internal component of a system.}
+%	{is a bad MAC by itself.}
+ \question[4] {Tick the \emph{false} assertion.}
+ {The Rijndael design contains S-boxes.}
+ {The Rijndael design uses $\text{GF}(2^8)$ arithmetics.}
+ {The Rijndael design contains a linear layer --- ShiftRows and MixColumn.}
+ {The Rijndael design is based on one-way functions.}
+
+	\question[3]{CCM}
+	{is a block cipher.}
+	{is a hash function.}
+	{is an authenticated mode of operation.}
+	{stands for coded ciphertext mode.}
+
+	\question[2]{Tick the \emph{false} assertion.}
+	{For MACs, in the chosen message attack model, the adversary can force the
+	sender to authenticate a selected message.}
+	{For MACs, the goal of an adversary is to decrypt a message.}
+	{For MACs, in the known message attack model, the adversary can only read
+	authenticated messages in transit.}
+	{For some MACs, the adversary can forge authenticated messages without recovering the secret
+	key.}
+
+%	\question[4]{Tick the \emph{false} assertion.}
+%	{A PRNG can be obtained from a stream cipher.}
+%	{A PRNG can be obtained from a block cipher.}
+%	{Some versions of SSL were using a bad PRNG.}
+%	{A PRNG requires a secret key.}
+
+	\question[4]{Tick the \emph{correct} assertion.}
+	{DES uses 256-bit keys.}
+	{AES uses 80-bit keys.}
+	{MD5 has a 160-bit digest.} 
+	{SHA-1 has a 160-bit digest.}
+
+ \question[1]{Tick the \emph{false} assertion.}
+ {$\epsilon$-universal hash functions can be used universally, i.e., in any
+ cryptographic application.}
+ {$\epsilon$-universal hash functions are families of functions.}
+ {An $\epsilon$-XOR-universal hash function $h_k$, for given $x,y$, $x \neq
+	 y$ satisfies that for any $a$
+	 %\begin{equation*}
+ $\Pr[h_k(x)\oplus h_k(y) = a] \leq \epsilon$
+ %\end{equation*}
+ over a random $k$.}
+ {$\epsilon$-universal hash functions are used in WC-MAC.}
+\end{document}

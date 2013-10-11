@@ -1,0 +1,11 @@
+\emph{}                      ::     <em>$$$</em>
+\textit{}                      ::     <em>$$$</em>
+\textbf{}                     ::     <strong>$$$</strong>
+\textsf{}                     ::      <span class="sf">$$$</span>
+\#                              ::       #
+\_                              ::       _
+\dots                         ::      &hellip;
+\ldots                        ::      &hellip;
+\`e                            ::      &egrave;
+\`{e}                          ::      &egrave;
+\'                               ::      '

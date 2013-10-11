@@ -1,0 +1,120 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-color:#EDEDED;
+}
+
+a {
+	text-decoration:none;
+	color:black;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+.small {
+	font-size:0.8em;
+	font-style:italic;
+}
+
+.menu {
+	font-style:italic;
+	padding:10px;
+	width:500px;
+}
+
+.right-menu {
+	text-align:right;
+}
+
+.sf {
+  font-family:'American Typewriter', Serif;
+  font-size:0.8em;
+}
+
+.info {
+	font-style:italic;
+	color:red;
+	padding:5px;
+}
+
+.list {
+	list-style:decimal;
+}
+
+.list li {
+	padding:5px;
+}
+
+.list li:hover {
+	list-style-type:square;
+}
+
+.f-left {
+	float:left;
+}
+
+.f-clear {
+	clear:both;
+}
+
+.question_box_admin {
+	margin:18px 0px 18px 30px;
+	border-collapse:collapse;
+}
+
+.question_box_admin .question_title {
+	font-size:1.2em;
+	margin-top:0px;
+	margin-bottom:8px;
+}
+
+.border-l {
+	border-left:5px groove;
+}
+
+.question_box input {
+	margin-left:20px;
+}
+
+.question_box .solution {
+	margin-left:20px;
+}
+
+.account_rows td {
+	border-bottom:1px solid black;
+}
+
+.account_rows td ul {
+	list-style:circle;
+	padding-top:10px;
+	padding-left:20px;
+	margin-left:0px;
+	text-align:left;
+}
+
+.difficulty {
+	width:450px;
+}
+
+.popup {
+	position:relative;
+	float:right;
+	top:-62px;
+	border:1px dotted black;
+	background-color:#FFC;
+	padding: 0px 15px 0px 15px;
+}
+.popup ul {
+	padding-left:15px;
+}
+
+.difficulty .popup {
+  display: none;
+}
+
+.difficulty:hover .popup {
+  display: block;
+}

@@ -1,0 +1,146 @@
+\documentclass[11pt,a4paper]{report}
+
+\usepackage{verbatim}
+\usepackage{epsfig}
+\usepackage{theorem}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[dvips]{color}
+\usepackage[dvipdfm,pdftitle={Cryptography and Security - Survey 1},pdfpagemode=None,colorlinks=true,linkcolor=black,urlcolor=blue]{hyperref}
+\usepackage{fullpage}
+\usepackage{subfigure}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{lib/verbtext}
+\usepackage{lib/security}
+
+
+\input{lib/macros.tex}
+
+
+
+% +-[A décommenter pour avoir la solution]--------------+
+
+
+%\solutiontrue
+
+
+
+% +-[document]------------------------------------------+
+\begin{document}
+
+
+% +-[header survey]-------------------------------------+
+\input{lib/header_fullpage.tex}
+\begin{center}
+\sf
+  \Large{Cryptography and Security}
+
+  \vspace{0.3cm}
+  \Large{2012 -- 2013}
+
+  \vspace{0.3cm}
+  \Large{Survey n$^{\text{o}}$ 6}
+
+  \vspace{0.5cm}
+\end{center}
+
+\hfill{Name:~}{\vrule width 7cm height 0.4pt}
+
+\bigskip
+
+\hfill{SCIPER n$^{\text{o}}$:~}{\vrule width 7cm height 0.4pt}
+
+\begin{comment}
+ \question[]{}
+ {}
+ {}
+ {}
+ {}
+\end{comment}
+
+\question[2]{Forward secrecy implies that \dots}
+{the cipher is perfectly secure.}               
+% hello
+{even if a long term key is disclosed, the communication remains private.}
+{the secrecy of a message depends on the security of the next message.}
+{when an adversary forwards an encrypted message to an decryption oracle, the
+message remains secret.}
+
+\question[1]{Tick the \emph{false} assumption.}
+{Static Diffie-Hellman has forward secrecy.}
+{If we run the static Diffie-Hellman protocol between Alice and Bob, the
+communications will always be the same.}
+{Static Diffie-Hellman can be implemented over elliptic curves.}
+{In ephemeral Diffie-Hellman, $g^x$ and $g^y$ are discarded at the end of the
+protocol.}
+ 
+\question[2]{Tick the \emph{correct} assertion.}
+{The ElGamal public-key is a hash of the secret key.}
+{For the ElGamal decryption, we need to compute an exponential.}
+{The ElGamal secret key is picked at random in $\mathbb{Z}_n$, with $n = pq$ for
+$p,q$ primes. }
+{The ElGamal ciphertext is an element of $\mathbb{Z}_n^*$, with $n=pq$ for $p,q$
+primes.}
+
+\question[3]{Which of the following encryption schemes is deterministic?}
+{RSA-OAEP}
+{Plain ElGamal}
+{Plain Rabin}
+{PKCS\#1.5}
+
+
+\question[4]{Plain RSA (with an $\ell$-bit modulus) \dots}
+{is commonly used in practice.}
+{decrypts in $O(\ell^2)$ time.}
+{encrypts in $O(\ell)$ time.}
+{has homomorphic properties.}
+
+\question[2]{Tick the \emph{correct} assertion.}
+{ElGamal encryption has a slower key-generation algorithm than RSA.}
+{ElGamal encryption is length increasing.}
+%{encrypts a message in $O(\ell^2)$.}
+{ElGamal cryptography cannot be used to sign a message.}
+{DSS is based on factoring.}
+
+ \question[3]{Tick the \emph{incorrect} assertion.}
+ {Plain RSA is deterministic.}
+ {An RSA modulus is a product of two prime numbers.}
+ {Deterministic encryption schemes always provide forward secrecy.}
+ {DSS requires public parameters.}
+ 
+ \question[4]{KEM \dots}                   
+ 		{stands for Keyless Encryption Mechanism.}
+    {is a Korean encryption mechanism.}
+ {is a symmetric-key algorithm.}
+ {is a public-key algorithm.}
+  
+%  \question[1]{Tick the \emph{incorrect} assertion. Plain RSA is \textit{not} preferred to use in practice since \dots}
+%{key length is too short.}
+%{it has homomorphic properties.}
+%{messages are not defined properly in the input domain.}
+%{ its engineering does not seem secure.}
+\question[2]{Tick the \emph{incorrect} assertion.}
+{A signature scheme may provide message recovery.}
+%{The short key-length of Plain RSA is what makes it not preferred in
+%practice.}
+      {We don't like to use Plain RSA in practice because of its short key-length.}		
+	 	{In the Rabin cryptosystem, ambiguity in the decryption is prevented by adding redundancy in the plaintext.}
+{A trapdoor function is easy to compute in one direction, yet believed to be
+difficult to compute in the opposite direction without the trapdoor.}
+
+
+ \question[1]{Tick the \emph{incorrect} assertion.}
+ {Commitment schemes never use randomness.}
+      {A commitment scheme can be based on the hardness of the discrete logarithm problem.}
+ {A commitment scheme should be hiding and binding.}
+ {Perdersen Commitment uses two large primes.}
+
+
+
+\end{document}
+
+
+
+
