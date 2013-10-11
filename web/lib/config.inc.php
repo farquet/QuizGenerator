@@ -49,9 +49,4 @@ define("TBL_CATEGORIES", "categories");
 define("TBL_COURSES", "courses");
 define("TBL_USERS_STATS", "users_stats");
 
-// Enabling error reports for debugging PHP
-// WARNING : This should be removed once online for security reasons
-error_reporting(E_ALL);
-ini_set('display_errors', true);
-ini_set('html_errors', false);
 ?>
