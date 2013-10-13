@@ -26,7 +26,7 @@ one aims to display random quizzes to anyone who want to practice this material.
 *	MathJax 2.1 or newer (v2.1 included in project)
 
 ### Important remarks
-*	The authentication used is named Tequila. It has been developped by EPFL and is and open source authentication system under GNU GPL v2 license. You can learn more about it on [the official website](http://tequila.epfl.ch "Tequila EPFL"). If you are not hosting this project on the EPFL subnet (*.epfl.ch), the authentication will not work and give you a fake EPFL id (999999) without prompting any login or password. Feel free to modify the *login.php* page which is the only file creating and deleting PHP sessions.
+*	The authentication used is named Tequila. It has been developped by EPFL and is and open source authentication system under GNU GPL v2 license. You can learn more about it on [the official website](http://tequila.epfl.ch "Tequila EPFL"). If you are not hosting this project on the EPFL subnet (\*.epfl.ch), the authentication will not work and give you a fake EPFL id (999999) without prompting any login or password. Feel free to modify the *login.php* page which is the only file creating and deleting PHP sessions.
 
 ___
 
