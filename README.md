@@ -15,7 +15,7 @@ The goal of this project is to exploit a large amount of Latex quiz archives. A 
 
 This project has two main parts. The first one consists in parsing a Latex file submitted
 by an admin and extracting quiz questions (title, answers and solution index) and organizing them in courses and chapters. The second
-one aims to display random quizzes to anyone who want to practice this material. A quiz is generated loading random questions from the database.
+one aims to display random quizzes to anyone who want to practice this material. A quiz is generated loading random questions from the database. It is displayed in a simple HTML form. Math rendering is done using MathJax library.
 
 #### Demo
 *	This is actually running on the LASEC website. [Try the version used by EPFL students](http://lasec.epfl.ch/quiz_generator/choices.php "Quiz generator at LASEC, EPFL").
