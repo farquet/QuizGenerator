@@ -1,6 +1,10 @@
 #QuizGenerator
 
-**Goal** : Parse Latex files to extract particular \question command. Storing and organizing questions in a MySQL database. Display random quizzes with many options.
+**Goal** : Parse Latex files to extract particular \question command. Storing and organizing questions in a MySQL database. Display random quizzes with in a simple HTML form.
+
+![Screenshot HTML question](http://francois.farquet.com/images/projects/screenshot-quizgenerator1.png)
+
+![Screenshot HTML correction](http://francois.farquet.com/images/projects/screenshot-quizgenerator2.png)
 
 ___
 
